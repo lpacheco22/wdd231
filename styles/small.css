@@ -1,0 +1,259 @@
+/* ------------------------- */
+/* SMALL.CSS - Mobile First  */
+/* ------------------------- */
+
+:root {
+    --primary: #0b3d91;
+    --secondary: #f4f4f4;
+    --accent: #ffd166;
+    --dark: #222;
+    --light: #ffffff;
+    --completed: #2e7d32;
+    --border: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo span {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* ---------- MENU ---------- */
+
+#menu {
+    display: block;
+    width: 100%;
+    margin-top: .75rem;
+    background: var(--accent);
+    border: none;
+    padding: .75rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    transition: background .3s;
+}
+
+.navigation a:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+.navigation .active {
+    background: rgba(255, 255, 255, .25);
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background: var(--primary);
+    color: white;
+    padding: .75rem;
+    text-align: center;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card img {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 6px;
+    height: auto;
+}
+
+/* ---------- CERTIFICATE ---------- */
+
+.certificate {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.certificate h2 {
+    background: var(--primary);
+    color: white;
+    padding: .75rem;
+    text-align: center;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.buttons button {
+    padding: .7rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+.buttons button:hover {
+    background: #062d6a;
+}
+
+/* ---------- COURSES ---------- */
+
+#courses {
+    display: grid;
+    gap: .75rem;
+    padding: 1rem;
+}
+
+.course-card {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: #ececec;
+    font-weight: bold;
+}
+
+.completed {
+    background: var(--completed);
+    color: white;
+}
+
+.credits {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    margin-top: 2rem;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social img {
+    width: 40px;
+    transition: transform .3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin: .35rem;
+}
+
+/* ---------- LINKS ---------- */
+
+a {
+    color: inherit;
+}
+
+/* ---------- IMAGES ---------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+
+button:focus,
+a:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ---------- SPACING ---------- */
+
+section {
+    margin-bottom: 1rem;
+}

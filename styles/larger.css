@@ -1,0 +1,95 @@
+/* ----------------------------- */
+/* LARGER.CSS                    */
+/* Desktop Styles (768px+)       */
+/* ----------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        justify-self: end;
+    }
+
+    .navigation {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        padding: 1rem 1.25rem;
+        border-radius: 6px;
+    }
+
+    .navigation a:hover {
+        background: rgba(255, 255, 255, .15);
+    }
+
+    /* ---------- MAIN ---------- */
+
+    .cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .card img {
+        width: 80%;
+        max-width: 280px;
+    }
+
+    /* ---------- COURSE BUTTONS ---------- */
+
+    .buttons {
+        justify-content: center;
+    }
+
+    /* ---------- COURSE CARDS ---------- */
+
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+
+    .course-card {
+        padding: 1rem;
+        font-size: 1rem;
+        transition: transform .2s ease;
+    }
+
+    .course-card:hover {
+        transform: translateY(-3px);
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 2rem;
+    }
+
+    .social {
+        margin-bottom: 1.5rem;
+    }
+
+}
