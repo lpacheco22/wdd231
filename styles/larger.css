@@ -1,12 +1,7 @@
-/* ----------------------------- */
-/* LARGER.CSS                    */
-/* Desktop Styles (768px+)       */
-/* ----------------------------- */
 
 @media only screen and (min-width: 768px) {
 
-    /* ---------- HEADER ---------- */
-
+    
     header {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -40,8 +35,7 @@
         background: rgba(255, 255, 255, .15);
     }
 
-    /* ---------- MAIN ---------- */
-
+    
     .cards {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -58,14 +52,12 @@
         max-width: 280px;
     }
 
-    /* ---------- COURSE BUTTONS ---------- */
-
+    
     .buttons {
         justify-content: center;
     }
 
-    /* ---------- COURSE CARDS ---------- */
-
+    
     #courses {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -82,8 +74,7 @@
         transform: translateY(-3px);
     }
 
-    /* ---------- FOOTER ---------- */
-
+    
     footer {
         padding: 2rem;
     }

@@ -1,9 +1,3 @@
-// ================================
-// courses.js
-// WDD231 Week 01
-// ================================
-
-// Course Array
 const courses = [
     {
         subject: "CSE",
@@ -55,7 +49,7 @@ const courses = [
     }
 ];
 
-// HTML Elements
+
 const courseContainer = document.querySelector("#courses");
 const totalCredits = document.querySelector("#totalCredits");
 
@@ -63,9 +57,7 @@ const allButton = document.querySelector("#all");
 const wddButton = document.querySelector("#wdd");
 const cseButton = document.querySelector("#cse");
 
-// ================================
-// Display Courses
-// ================================
+
 
 function displayCourses(courseList) {
 
@@ -95,9 +87,7 @@ function displayCourses(courseList) {
 
 }
 
-// ================================
-// Credits Total
-// ================================
+
 
 function calculateCredits(courseList) {
 
@@ -109,9 +99,7 @@ function calculateCredits(courseList) {
 
 }
 
-// ================================
-// Filter Buttons
-// ================================
+
 
 allButton.addEventListener("click", () => {
     displayCourses(courses);
@@ -133,8 +121,5 @@ cseButton.addEventListener("click", () => {
 
 });
 
-// ================================
-// Initial Display
-// ================================
 
 displayCourses(courses);
