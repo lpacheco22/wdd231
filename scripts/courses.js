@@ -30,7 +30,7 @@ const courses = [
         title: "Programming with Classes",
         credits: 2,
         certificate: "Web and Computer Programming",
-        completed: false
+        completed: true
     },
     {
         subject: "WDD",
