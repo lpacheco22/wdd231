@@ -61,7 +61,6 @@ const cseButton = document.querySelector("#cse");
 
 
 function displayCourses(courseList) {
-
     courseContainer.innerHTML = "";
 
     courseList.forEach(course => {
@@ -83,7 +82,6 @@ function displayCourses(courseList) {
         courseContainer.appendChild(card);
 
     });
-
     calculateCredits(courseList);
 
 }
@@ -95,7 +93,6 @@ function calculateCredits(courseList) {
     const credits = courseList.reduce((sum, course) => {
         return sum + course.credits;
     }, 0);
-
     totalCredits.textContent = credits;
 
 }
@@ -109,7 +106,6 @@ allButton.addEventListener("click", () => {
 wddButton.addEventListener("click", () => {
 
     const filtered = courses.filter(course => course.subject === "WDD");
-
     displayCourses(filtered);
 
 });
@@ -117,7 +113,6 @@ wddButton.addEventListener("click", () => {
 cseButton.addEventListener("click", () => {
 
     const filtered = courses.filter(course => course.subject === "CSE");
-
     displayCourses(filtered);
 
 });
