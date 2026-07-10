@@ -70,7 +70,7 @@ header {
     border: none;
     background-color: var(--accent-color);
     color: black
-    cursor: pointer;
+    cursor; pointer;
 }
 
 .navigation {
