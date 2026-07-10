@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Guayaquil Coffee House",
+    "address": "123 Malecón Simón Bolívar, Guayaquil, Ecuador",
+    "phone": "+593 4 555-1001",
+    "website": "https://www.guayaquilcoffee.com",
+    "image": "logo1.webp",
+    "membership": 3,
+    "description": "A specialty coffee shop serving locally roasted coffee, pastries, and breakfast."
+  },
+  {
+    "name": "Pacific Technology Solutions",
+    "address": "456 Avenida 9 de Octubre, Guayaquil, Ecuador",
+    "phone": "+593 4 555-1002",
+    "website": "https://www.pacifictech.com",
+    "image": "logo2.webp",
+    "membership": 2,
+    "description": "Technology consulting, software development, and managed IT services."
+  },
+  {
+    "name": "Coastal Travel Agency",
+    "address": "789 Víctor Emilio Estrada Avenue, Guayaquil, Ecuador",
+    "phone": "+593 4 555-1003",
+    "website": "https://www.coastaltravel.com",
+    "image": "logo3.webp",
+    "membership": 1,
+    "description": "Vacation packages, airline tickets, cruises, and personalized travel planning."
+  },
+  {
+    "name": "Riverfront Fitness Center",
+    "address": "321 Kennedy Norte, Guayaquil, Ecuador",
+    "phone": "+593 4 555-1004",
+    "website": "https://www.riverfrontfitness.com",
+    "image": "logo4.webp",
+    "membership": 2,
+    "description": "Modern fitness center with weight training, yoga, spinning, and personal coaching."
+  },
+  {
+    "name": "Fresh Market Grocery",
+    "address": "654 Urdesa Central, Guayaquil, Ecuador",
+    "phone": "+593 4 555-1005",
+    "website": "https://www.freshmarket.com",
+    "image": "logo5.webp",
+    "membership": 3,
+    "description": "Local grocery store featuring fresh produce, bakery items, meats, and household goods."
+  },
+  {
+    "name": "Eco Construction Group",
+    "address": "987 Samborondón Road, Guayaquil, Ecuador",
+    "phone": "+593 4 555-1006",
+    "website": "https://www.ecoconstruction.com",
+    "image": "logo6.webp",
+    "membership": 2,
+    "description": "Commercial and residential construction using environmentally friendly building practices."
+  },
+  {
+    "name": "Sunrise Medical Clinic",
+    "address": "741 Garzota District, Guayaquil, Ecuador",
+    "phone": "+593 4 555-1007",
+    "website": "https://www.sunrisemedical.com",
+    "image": "logo7.webp",
+    "membership": 3,
+    "description": "Comprehensive healthcare services including family medicine, laboratory testing, and preventive care."
+  }
+]

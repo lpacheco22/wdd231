@@ -1,5 +1,3 @@
-// navigation.js
-
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
