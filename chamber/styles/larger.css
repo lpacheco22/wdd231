@@ -1,6 +1,9 @@
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
-    
+    /* -------------------- */
+    /* Header */
+    /* -------------------- */
+
     header {
         display: flex;
         justify-content: space-between;
@@ -14,129 +17,83 @@
         gap: 1rem;
     }
 
-    .logo img {
-        width: 80px;
-    }
-
-    .logo h1 {
-        font-size: 2rem;
-    }
-
-    .logo p {
-        font-size: 1rem;
-    }
-
-    
-
     #menu {
         display: none;
     }
 
-    .navigation {
-        display: flex !important;
-        gap: .75rem;
-        margin: 0;
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
 
-    .navigation li {
-        margin: 0;
-    }
-
-    .navigation a {
-        padding: .75rem 1.25rem;
+    nav a {
+        border: none;
+        padding: .75rem 1rem;
         border-radius: 5px;
     }
 
-    
-    .container {
+    nav a:hover {
+        background: rgba(255, 255, 255, .2);
+    }
+
+    /* -------------------- */
+    /* Main */
+    /* -------------------- */
+
+    main {
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    /* Events and Weather */
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    /* Spotlights */
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .spotlight-card {
+        transition: transform .3s;
+    }
+
+    .spotlight-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Hero */
+
+    .hero-text {
+        max-width: 420px;
         padding: 2rem;
     }
 
-    
-
-    h2 {
+    .hero-text h2 {
         font-size: 2rem;
     }
 
-    .intro {
-        max-width: 800px;
-        margin: 0 auto 2rem;
+    .hero-text p {
+        font-size: 1.1rem;
     }
 
-    
-    .view-buttons {
-        justify-content: flex-end;
+    .button {
+        font-size: 1rem;
     }
 
-    
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .grid section {
-        transition: transform .3s ease,
-            box-shadow .3s ease;
-    }
-
-    .grid section:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 18px rgba(0, 0, 0, .2);
-    }
-
-    .grid img {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-    }
-
-    
-    .list section {
-
-        display: grid;
-
-        grid-template-columns:
-            150px 2fr 2fr;
-
-        align-items: center;
-
-        gap: 1.5rem;
-
-        padding: 1.25rem;
-    }
-
-    .list img {
-        display: block;
-        width: 120px;
-        margin: 0 auto;
-    }
-
-    
+    /* Footer */
 
     footer {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(3, 1fr);
-
-        align-items: center;
-
-        text-align: center;
-
-        gap: 2rem;
-    }
-
-    footer section {
-        margin: 0;
-    }
-
-    .social {
-        justify-content: center;
+        padding: 2rem;
     }
 
 }
