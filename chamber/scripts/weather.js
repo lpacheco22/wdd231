@@ -1,24 +1,47 @@
 const apiKey = "8882bf0b9151c9841b7b332c6be5abae";
-const url = `https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil,EC&units=metric&appid=${8882bf0b9151c9841b7b332c6be5abae}`;
+const lat = -2.170998;
+const lon = -79.922359;
+
+const currentURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
 async function getWeather() {
-    try {
-        const response = await fetch(url);
 
-        if (!response.ok) {
-            throw new Error("Weather data not available.");
+    try {
+
+        const currentResponse = await fetch(currentURL);
+
+        if (!currentResponse.ok) {
+            throw new Error("Current weather not found.");
         }
 
-        const data = await response.json();
-        displayCurrentWeather(data);
-        displayForecast(data);
+        const currentData = await currentResponse.json();
 
-    } catch (error) {
-        document.querySelector("#current-weather").innerHTML =
-            "<p>Unable to load weather information.</p>";
+        displayCurrentWeather(currentData);
+
+
+        const forecastResponse = await fetch(forecastURL);
+
+        if (!forecastResponse.ok) {
+            throw new Error("Forecast not found.");
+        }
+
+        const forecastData = await forecastResponse.json();
+
+        displayForecast(forecastData);
+
+    }
+
+    catch (error) {
 
         console.error(error);
+
+        document.querySelector("#current-weather").textContent =
+            "Weather information unavailable.";
+
     }
+
 }
 
 function displayCurrentWeather(data) {
@@ -26,50 +49,46 @@ function displayCurrentWeather(data) {
     const weather = document.querySelector("#current-weather");
 
     weather.innerHTML = `
-    <p> <strong>Temperature:</strong> ${ Math.round(data.list[0].main.temp) }°C</p >
-        <p><strong>Condition:</strong> ${capitalize(data.list[0].weather[0].description)}</p>
-        <p><strong>Humidity:</strong> ${data.list[0].main.humidity}%</p>
+        <p><strong>Temperature:</strong> ${Math.round(data.main.temp)}°C</p>
+        <p><strong>Condition:</strong> ${capitalize(data.weather[0].description)}</p>
     `;
+
 }
 
 function displayForecast(data) {
 
     const forecast = document.querySelector("#forecast");
+
     forecast.innerHTML = "";
-    
-    const dailyForecast = data.list.filter(item =>
+
+    const daily = data.list.filter(item =>
         item.dt_txt.includes("12:00:00")
     );
 
     for (let i = 0; i < 3; i++) {
 
-        const day = dailyForecast[i];
+        const day = daily[i];
+
         const date = new Date(day.dt_txt);
+
         const weekday = date.toLocaleDateString("en-US", {
             weekday: "long"
         });
 
-        const card = document.createElement("p");
-
-        card.innerHTML = `
-            <strong>${weekday}</strong>:
-            ${Math.round(day.main.temp)}°C
+        forecast.innerHTML += `
+            <p>
+                <strong>${weekday}</strong>: ${Math.round(day.main.temp)}°C
+            </p>
         `;
 
-        forecast.appendChild(card);
     }
 
 }
 
 function capitalize(text) {
 
-    return text
-        .split(" ")
-        .map(word =>
-            word.charAt(0).toUpperCase() +
-            word.slice(1)
-        )
-        .join(" ");
+    return text.replace(/\b\w/g, letter => letter.toUpperCase());
+
 }
 
 getWeather();

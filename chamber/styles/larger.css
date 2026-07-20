@@ -1,20 +1,10 @@
 @media screen and (min-width: 768px) {
 
-    /* -------------------- */
-    /* Header */
-    /* -------------------- */
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
     }
 
     #menu {
@@ -23,7 +13,6 @@
 
     nav {
         display: flex;
-        flex-direction: row;
         gap: 1rem;
     }
 
@@ -37,29 +26,30 @@
         background: rgba(255, 255, 255, .2);
     }
 
-    /* -------------------- */
-    /* Main */
-    /* -------------------- */
-
     main {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 2rem;
     }
 
-    /* Events and Weather */
+    .hero {
+        margin-bottom: 2rem;
+    }
 
     .home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        margin: 1.5rem 0;
+        margin: 2rem 0;
     }
 
-    /* Spotlights */
+    .card {
+        height: 100%;
+    }
 
     #spotlights {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1rem;
     }
 
@@ -70,8 +60,6 @@
     .spotlight-card:hover {
         transform: translateY(-5px);
     }
-
-    /* Hero */
 
     .hero-text {
         max-width: 420px;
@@ -90,10 +78,7 @@
         font-size: 1rem;
     }
 
-    /* Footer */
-
     footer {
         padding: 2rem;
     }
-
 }
