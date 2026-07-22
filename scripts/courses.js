@@ -6,6 +6,8 @@ const courses = [
         title: "Introduction to Programming",
         credits: 2,
         certificate: "Web and Computer Programming",
+        description: "Introduction to programming using c#.",
+        technology: ["c#"],
         completed: true
     },
     {
@@ -14,6 +16,8 @@ const courses = [
         title: "Web Fundamentals",
         credits: 2,
         certificate: "Web and Computer Programming",
+        description: "Learn HTML and CSS to build web pages.",
+        technology: ["HTML", "CSS"],
         completed: true
     },
     {
@@ -22,6 +26,8 @@ const courses = [
         title: "Programming with Functions",
         credits: 2,
         certificate: "Web and Computer Programming",
+        description: "Learn functions, loops, and problem solving.",
+        technology: ["C#"],
         completed: true
     },
     {
@@ -30,6 +36,8 @@ const courses = [
         title: "Programming with Classes",
         credits: 2,
         certificate: "Web and Computer Programming",
+        description: "Learn object-oriented programming using classes.",
+        technology: ["C#"],
         completed: true
     },
     {
@@ -38,6 +46,8 @@ const courses = [
         title: "Dynamic Web Fundamentals",
         credits: 2,
         certificate: "Web and Computer Programming",
+        description: "Build interactive websites with JavaScript.",
+        technology: ["HTML", "CSS", "JavaScript"],
         completed: true
     },
     {
@@ -46,6 +56,8 @@ const courses = [
         title: "Frontend Web Development I",
         credits: 2,
         certificate: "Web and Computer Programming",
+        description: "Create responsive websites using HTML, CSS, and JavaScript.",
+        technology: ["HTML", "CSS", "JavaScript"],
         completed: false
     }
 ];
@@ -58,9 +70,12 @@ const allButton = document.querySelector("#all");
 const wddButton = document.querySelector("#wdd");
 const cseButton = document.querySelector("#cse");
 
+const courseDetails = document.querySelector("#course-details");
+
 
 
 function displayCourses(courseList) {
+
     courseContainer.innerHTML = "";
 
     courseList.forEach(course => {
@@ -79,9 +94,15 @@ function displayCourses(courseList) {
             <p>${course.credits} Credits</p>
         `;
 
+        
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         courseContainer.appendChild(card);
 
     });
+
     calculateCredits(courseList);
 
 }
@@ -99,6 +120,50 @@ function calculateCredits(courseList) {
 
 
 
+function displayCourseDetails(course) {
+
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+
+        <h2>${course.subject} ${course.number}</h2>
+
+        <h3>${course.title}</h3>
+
+        <p><strong>Credits:</strong> ${course.credits}</p>
+
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+
+        <p>${course.description}</p>
+
+        <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+    courseDetails.showModal();
+
+    document.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+}
+
+
+
+courseDetails.addEventListener("click", (event) => {
+
+    const rect = courseDetails.getBoundingClientRect();
+
+    if (
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom
+    ) {
+        courseDetails.close();
+    }
+
+});
+
+
 allButton.addEventListener("click", () => {
     displayCourses(courses);
 });
@@ -106,6 +171,7 @@ allButton.addEventListener("click", () => {
 wddButton.addEventListener("click", () => {
 
     const filtered = courses.filter(course => course.subject === "WDD");
+
     displayCourses(filtered);
 
 });
@@ -113,6 +179,7 @@ wddButton.addEventListener("click", () => {
 cseButton.addEventListener("click", () => {
 
     const filtered = courses.filter(course => course.subject === "CSE");
+
     displayCourses(filtered);
 
 });

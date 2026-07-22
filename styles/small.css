@@ -252,3 +252,40 @@ a:focus {
 section {
     margin-bottom: 1rem;
 }
+
+
+/* ---------- Modal ---------- */
+
+dialog {
+    width: 90%;
+    max-width: 600px;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+::backdrop {
+    background: rgba(0, 0, 0, .6);
+}
+
+dialog button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: #d62828;
+    color: white;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+dialog p {
+    margin: .5rem 0;
+}
