@@ -28,6 +28,14 @@ header {
     padding: 1rem;
 }
 
+.site-name {
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+}
+
 .logo {
     display: flex;
     align-items: center;
