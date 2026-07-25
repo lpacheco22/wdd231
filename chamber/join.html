@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Guayaquil Chamber of Commerce</title>
+
+    <meta name="description" content="Apply for membership with the Guayaquil Chamber of Commerce.">
+    <meta name="author" content="Luis Pacheco">
+
+    <meta property="og:title" content="Guayaquil Chamber Join">
+    <meta property="og:description" content="Membership application page for the Guayaquil Chamber of Commerce.">
+    <meta property="og:image" content="images/chamber.webp">
+    <meta property="og:url" content="https://lpacheco22.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.webp" alt="Chamber Logo" width="80" height="80">
+            <div>
+                <h1>Guayaquil Chamber of Commerce</h1>
+                <p>Supporting Local Business</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Navigation Menu"></button>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>Join us as a Chamber Member</h2>
+
+        <div class="join-container">
+
+            <section class="application">
+
+                <form method="get" action="thankyou.html">
+
+                    <label>
+                        First Name
+                        <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organization Title
+                        <input type="text" name="orgtitle" title="Use at least 7 letters. Only letters, spaces, and hyphens are allowed."
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" placeholder="Marketing Manager">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email" name="email" title="Email Address" autocomplete="email"
+                            placeholder="example@email.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone
+                        <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input type="text" name="organization" title="Organization Name" autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label>
+                        Membership Level
+
+                        <select name="membership" title="Membership Level" required>
+                            <option value="" selected disabled>Select a Membership Level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business Description
+
+                        <textarea name="description" title="Business Description" rows="5"></textarea>
+
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="submit" value="Apply for Membership">
+
+                </form>
+
+            </section>
+
+            <aside class="membership-cards">
+
+                <div class="card">
+
+                    <h3>NP Membership</h3>
+                    <p>For nonprofit organizations</p>
+
+                    <button data-modal="npModal">
+                        Learn More
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Bronze Membership</h3>
+                    <p>Affordable membership for growing businesses.</p>
+
+                    <button data-modal="bronzeModal">
+                        Learn More
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Silver Membership</h3>
+                    <p>More visibility and networking opportunities.</p>
+
+                    <button data-modal="silverModal">
+                        Learn More
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Gold Membership</h3>
+                    <p>Maximum exposure and premium benefits.</p>
+
+                    <button data-modal="goldModal">
+                        Learn More
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+        
+        <dialog id="npModal">
+
+            <h3>NP Membership</h3>
+
+            <ul>
+                <li>No membership fee</li>
+                <li>Community networking</li>
+                <li>Business workshops</li>
+                <li>Monthly newsletter</li>
+            </ul>
+
+            <button class="close">Close</button>
+
+        </dialog>
+
+        
+        <dialog id="bronzeModal">
+
+            <h3>Bronze Membership</h3>
+
+            <ul>
+                <li>Everything in NP</li>
+                <li>Business directory listing</li>
+                <li>Training discounts</li>
+                <li>Local networking events</li>
+            </ul>
+
+            <button class="close">Close</button>
+
+        </dialog>
+
+        
+        <dialog id="silverModal">
+
+            <h3>Silver Membership</h3>
+
+            <ul>
+                <li>Everything in Bronze</li>
+                <li>Homepage advertising</li>
+                <li>Event discounts</li>
+                <li>Business promotion</li>
+            </ul>
+
+            <button class="close">Close</button>
+
+        </dialog>
+
+        
+        <dialog id="goldModal">
+
+            <h3>Gold Membership</h3>
+
+            <ul>
+                <li>Everything in Silver</li>
+                <li>Premium advertising</li>
+                <li>VIP business events</li>
+                <li>Featured member spotlight</li>
+            </ul>
+
+            <button class="close">Close</button>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+    
+        <div class="footer-content">
+    
+            <p><strong>Guayaquil Chamber of Commerce</strong></p>
+    
+            <p>&copy; <span id="year"></span> WDD231 Class Project</p>
+    
+            <p>Luis Pacheco</p>
+    
+            <p id="lastModified"></p>
+    
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>
