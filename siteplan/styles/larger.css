@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        padding: 1rem 1.5rem;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .wireframe {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+}
