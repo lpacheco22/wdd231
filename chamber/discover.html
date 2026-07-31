@@ -6,8 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover | Guayaquil Chamber of Commerce</title>
-    <meta name="description" content="Discover attractions and places to visit in Guayaquil, Ecuador.">
+    <meta name="description"
+        content="Discover Guayaquil's attractions, parks, museums, restaurants, and visitor information with the Guayaquil Chamber of Commerce.">
     <meta name="author" content="Luis Pacheco">
+    <meta property="og:title" content="Discover | Guayaquil Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore Guayaquil's main attractions, parks, museums, restaurants, and historic landmarks with the Guayaquil Chamber of Commerce.">
+    <meta property="og:image" content="https://lpacheco22.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://lpacheco22.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +26,22 @@
     <link rel="stylesheet" href="styles/discover.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+
 </head>
 
 <body>
 
     <header>
-        <img src="images/logo.webp" alt="Guayaquil Chamber Logo" class="logo">
+
+        <img src="images/logo.webp" alt="Guayaquil Chamber of Commerce logo" class="logo">
+
         <div>
 
             <h1>Guayaquil Chamber of Commerce</h1>
             <p>Supporting Local Business</p>
+
         </div>
 
         <button id="menu" aria-label="Navigation Menu">
@@ -38,48 +51,54 @@
         </button>
 
     </header>
-    <nav>
+
+    <nav aria-label="Main Navigation">
         <ul class="navigation">
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html" class="active">Discover</a></li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+
+            <li>
+                <a href="discover.html" class="active" aria-current="page">Discover</a>
+            </li>
+
         </ul>
+
     </nav>
 
     <main>
+
         <h2>Discover Guayaquil</h2>
-        <div id="visit-message"></div>
-        <section id="discover-cards" aria-label="Places to Discover">
-        </section>
+        <div id="visit-message" aria-live="polite"></div>
+        <section id="discover-cards" aria-label="Places to Discover"></section>
+
     </main>
 
     <footer>
 
         <p>
-
-            © <span id="currentyear"></span>
-
-            Luis Pacheco
-
+            &copy;
+            <span id="currentyear"></span>
+            | Luis Pacheco |
             Ecuador
-
         </p>
 
         <p>
-
             WDD231 Chamber Project
-
         </p>
 
         <p id="lastModified"></p>
 
     </footer>
-
-    <script src="scripts/navigation.js"></script>
-
-    <script type="module" src="scripts/discover.js"></script>
 
 </body>
 
