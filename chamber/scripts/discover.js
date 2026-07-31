@@ -17,6 +17,7 @@ places.forEach((place, index) => {
     image.src = place.image;
     image.alt = `Photo of ${place.name}`;
     image.loading = "lazy";
+    image.decoding = "async";
     image.width = 300;
     image.height = 200;
     figure.appendChild(image);
