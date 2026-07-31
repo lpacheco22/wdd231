@@ -5,7 +5,8 @@ places.forEach((place, index) => {
 
     const card = document.createElement("div");
     card.classList.add("card");
-    card.style.gridArea = `card${index + 1}`;
+    card.classList.add("card");
+    card.classList.add(`card${index + 1}`);
 
     const title = document.createElement("h2");
     title.textContent = place.name;
