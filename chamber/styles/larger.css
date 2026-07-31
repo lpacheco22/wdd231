@@ -1,88 +1,52 @@
-@media screen and (min-width: 768px) {
-    main {
-        padding: 2rem;
-    }
-
+@media only screen and (min-width: 768px) {
 
     header {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
         align-items: center;
         padding: 1rem 2rem;
     }
+
+    .logo {
+        width: 90px;
+    }
+
 
     #menu {
         display: none;
     }
 
-    nav {
+    .navigation {
         display: flex;
-        gap: 1rem;
+        justify-content: center;
+        background-color: var(--secondary-color);
     }
 
-    nav a {
+    .navigation li {
         border: none;
-        padding: .75rem 1rem;
-        border-radius: 5px;
     }
 
-    nav a:hover {
-        background: rgba(255, 255, 255, .2);
+    .navigation a {
+        padding: 1rem 2rem;
+    }
+
+    .navigation a:hover {
+        background-color: var(--accent-color);
     }
 
     main {
-        max-width: 1200px;
-        margin: 0 auto;
         padding: 2rem;
     }
 
-    .hero {
+    section {
         margin-bottom: 2rem;
     }
 
-    .home-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin: 2rem 0;
-    }
-
-    .card {
-        height: 100%;
-    }
-
-    #spotlights {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-    }
-
-    .spotlight-card {
-        transition: transform .3s;
-    }
-
-    .spotlight-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .hero-text {
-        max-width: 420px;
-        padding: 2rem;
-    }
-
-    .hero-text h2 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1.1rem;
-    }
-
-    .button {
-        font-size: 1rem;
-    }
-
     footer {
-        padding: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
     }
+
 }
