@@ -43,42 +43,37 @@ places.forEach((place, index) => {
 
 });
 
-const message = document.querySelector("#visit-message");
-
+const visitMessage = document.querySelector("#visit-message");
+const currentVisit = Date.now();
 const lastVisit = Number(localStorage.getItem("lastVisit"));
 
-const today = Date.now();
-
 if (!lastVisit) {
-    message.textContent =
+    visitMessage.textContent =
         "Welcome! Let us know if you have any questions.";
 
-}
-    else {
-    const daysBetween = Math.floor(
-        (today - lastVisit) / (1000 * 60 * 60 * 24)
-    );
+} else {
+    const difference = currentVisit - lastVisit;
+    const days = Math.floor(difference / 86400000);
 
-    if (daysBetween < 1) {
-        message.textContent =
+    if (days < 1) {
+        visitMessage.textContent =
             "Back so soon! Awesome!";
+    }
 
-    } else if (daysBetween === 1) {
-        message.textContent =
+    else if (days === 1) {
+        visitMessage.textContent =
             "You last visited 1 day ago.";
+    }
 
-    } else {
-        message.textContent =
-            `You last visited ${daysBetween} days ago.`;
-
+    else {
+        visitMessage.textContent =
+            `You last visited ${days} days ago.`;
     }
 
 }
 
-localStorage.setItem("lastVisit", today);
-
+localStorage.setItem("lastVisit", currentVisit);
 document.querySelector("#currentyear").textContent =
     new Date().getFullYear();
-
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
