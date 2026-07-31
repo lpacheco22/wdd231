@@ -29,7 +29,7 @@ export const places = [
         image: "images/parquehistorico.webp",
         address: "Samborondón",
         description: "A park with wildlife, historic buildings, and beautiful natural surroundings.",
-        url: "https://www.guayaquilesmidestino.com"
+        url: "https://es.wikipedia.org/wiki/Parque_Hist%C3%B3rico_de_Guayaquil"
     },
 
     {
@@ -45,7 +45,7 @@ export const places = [
         image: "images/botanicalgarden.webp",
         address: "Francisco de Orellana Avenue",
         description: "A peaceful garden with orchids, butterflies, and native Ecuadorian plants.",
-        url: "https://www.guayaquilesmidestino.com"
+        url: "https://es.wikipedia.org/wiki/Jard%C3%ADn_Bot%C3%A1nico_de_Guayaquil"
     },
 
     {
@@ -53,7 +53,7 @@ export const places = [
         image: "images/puerto.webp",
         address: "Pedro Menéndez Gilbert Avenue",
         description: "A modern waterfront district with restaurants, hotels, and scenic views.",
-        url: "https://www.guayaquilesmidestino.com"
+        url: "https://es.wikipedia.org/wiki/Puerto_Santa_Ana_(Guayaquil)"
     },
 
     {
