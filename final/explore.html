@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore | Ecuador Nature Explorer | Luis Pacheco</title>
     <meta name="description"
-        content="Explore Ecuador national parks, volcanoes, forests, and natural destinations with Ecuador Nature Explorer.">
+        content="Explore Ecuador's national parks, volcanoes, forests, waterfalls, and natural destinations with Ecuador Nature Explorer.">
     <meta name="author" content="Luis Pacheco">
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Explore Ecuador Nature Destinations">
-    <meta property="og:description" content="Discover Ecuador's most beautiful natural locations.">
+    <meta property="og:description"
+        content="Discover Ecuador's national parks, volcanoes, forests, waterfalls, and other beautiful natural destinations.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lpacheco22.github.io/wdd231/final/images/hero.webp">
     <meta property="og:url" content="https://lpacheco22.github.io/wdd231/final/explore.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -39,11 +41,8 @@
             </span>
         </div>
 
-
         <button id="menu" aria-label="Navigation Menu">
-
             ☰
-
         </button>
 
         <nav>
@@ -53,68 +52,47 @@
                         Home
                     </a>
                 </li>
-
                 <li>
                     <a href="explore.html" class="active" aria-current="page">
                         Explore
                     </a>
                 </li>
-
                 <li>
                     <a href="planner.html">
                         Plan Your Trip
                     </a>
                 </li>
-
             </ul>
-
         </nav>
 
     </header>
 
     <main>
-
         <h1>
             Explore Ecuador's Nature
         </h1>
-
         <section class="explore-tools">
+            <h2>Find a Destination</h2>
             <label for="search">
                 Search destinations
             </label>
-
-            <input type="search" id="search" placeholder="Example: Cotopaxi">
+            <input type="search" id="search" placeholder="Example: Cotopaxi" aria-label="Search natural destinations">
             <div class="filters">
-                <button data-category="all">
-
+                <button type="button" data-category="all">
                     All
-
                 </button>
-
-                <button data-category="park">
-
+                <button type="button" data-category="park">
                     Parks
-
                 </button>
-
-                <button data-category="forest">
-
+                <button type="button" data-category="forest">
                     Forests
-
                 </button>
-
-                <button data-category="volcano">
-
+                <button type="button" data-category="volcano">
                     Volcanoes
-
                 </button>
-
-                <button data-category="waterfall">
-
+                <button type="button" data-category="waterfall">
                     Waterfalls
-
                 </button>
-
             </div>
 
         </section>
@@ -123,19 +101,13 @@
             <h2>
                 Natural Destinations
             </h2>
-
             <div id="destination-cards"></div>
         </section>
-
         <dialog id="detailsDialog">
             <div id="dialogContent"></div>
-
-            <button id="closeDialog">
-
+            <button type="button" id="closeDialog">
                 Close
-
             </button>
-
         </dialog>
 
     </main>
@@ -145,26 +117,21 @@
             <a href="https://github.com/lpacheco22" target="_blank" rel="noopener" aria-label="GitHub">
                 <img src="images/github.svg" alt="GitHub" width="40" height="40">
             </a>
-        
-            <a href="https://www.linkedin.com/in/luis-pacheco-varas/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/luis-pacheco-varas/" target="_blank" rel="noopener"
+                aria-label="LinkedIn">
                 <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
             </a>
-        
         </div>
-        <p>
-            ©
-            <span id="currentYear"></span>
 
+        <p>
+            &copy;
+            <span id="currentYear"></span>
             Ecuador Nature Explorer | Luis Pacheco
         </p>
-
         <p id="lastModified"></p>
-
         <p>
-            <a href="#">
-
+            <a href="index.html">
                 Final Project
-
             </a>
         </p>
 
