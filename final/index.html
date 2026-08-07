@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Ecuador Nature Explorer | Luis Pacheco</title>
+    <meta name="description"
+        content="Explore Ecuador's natural wonders including national parks, volcanoes, forests, and unique destinations.">
+    <meta name="author" content="Luis Pacheco">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Ecuador Nature Explorer">
+    <meta property="og:description"
+        content="Discover Ecuador's amazing natural destinations and plan your next adventure.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lpacheco22.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://lpacheco22.github.io/wdd231/final/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Ecuador Nature Explorer logo" width="60" height="60">
+            <span>
+                Ecuador Nature Explorer
+            </span>
+
+        </div>
+
+        <button id="menu" aria-label="Navigation Menu">
+
+            ☰
+
+        </button>
+
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html" class="active" aria-current="page">
+
+                        Home
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="explore.html">
+
+                        Explore
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="planner.html">
+
+                        Plan Your Trip
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div>
+                <h1>
+                    Discover Ecuador's Natural Beauty
+                </h1>
+
+                <p>
+                    Explore volcanoes, rainforests, national parks,
+                    and hidden treasures throughout Ecuador.
+                </p>
+
+                <a class="button" href="explore.html">
+
+                    Explore Destinations
+
+                </a>
+
+            </div>
+
+            <img src="images/hero.webp" alt="Ecuador mountain landscape" width="600" height="400" loading="lazy">
+
+        </section>
+
+        <section>
+            <h2>
+                Featured Experiences
+            </h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>
+                        Andes Mountains
+                    </h3>
+                    <p>
+                        Discover high-altitude landscapes,
+                        volcanoes, and beautiful mountain trails.
+                    </p>
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Amazon Rainforest
+                    </h3>
+
+                    <p>
+                        Experience incredible biodiversity
+                        and unique wildlife.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Pacific Coast
+                    </h3>
+
+                    <p>
+                        Visit beaches, marine ecosystems,
+                        and coastal adventures.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/lpacheco22" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub" width="40" height="40">
+            </a>
+        
+            <a href="https://www.linkedin.com/in/luis-pacheco-varas/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+            </a>
+        
+        </div>
+
+        <p>
+            ©
+            <span id="currentYear"></span>
+
+            Ecuador Nature Explorer | Luis Pacheco
+        </p>
+
+        <p id="lastModified"></p>
+
+        <p>
+            <a href="#">
+
+                Final Project
+
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

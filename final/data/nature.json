@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Cotopaxi National Park",
+        "category": "volcano",
+        "province": "Cotopaxi",
+        "elevation": "5897 meters",
+        "description": "A famous national park surrounding Cotopaxi Volcano, one of the highest active volcanoes in the world.",
+        "image": "images/cotopaxi.webp"
+    },
+    {
+        "id": 2,
+        "name": "Galapagos National Park",
+        "category": "park",
+        "province": "Galapagos",
+        "elevation": "1707 meters",
+        "description": "A unique ecosystem famous for giant tortoises, marine wildlife, and incredible biodiversity.",
+        "image": "images/galapagos.webp"
+    },
+    {
+        "id": 3,
+        "name": "Yasuni National Park",
+        "category": "forest",
+        "province": "Orellana",
+        "elevation": "190-400 meters",
+        "description": "One of the most biodiverse areas on Earth located in Ecuador's Amazon rainforest.",
+        "image": "images/yasuni.webp"
+    },
+    {
+        "id": 4,
+        "name": "Mindo Cloud Forest",
+        "category": "forest",
+        "province": "Pichincha",
+        "elevation": "1250 meters",
+        "description": "A cloud forest destination known for birds, butterflies, waterfalls, and outdoor adventures.",
+        "image": "images/mindo.webp"
+    },
+    {
+        "id": 5,
+        "name": "Cajas National Park",
+        "category": "park",
+        "province": "Azuay",
+        "elevation": "4450 meters",
+        "description": "A beautiful high-altitude park with lakes, mountains, and unique Andean landscapes.",
+        "image": "images/cajas.webp"
+    },
+    {
+        "id": 6,
+        "name": "Quilotoa Lagoon",
+        "category": "volcano",
+        "province": "Cotopaxi",
+        "elevation": "3914 meters",
+        "description": "A spectacular turquoise volcanic crater lake surrounded by mountain scenery.",
+        "image": "images/quilotoa.webp"
+    },
+    {
+        "id": 7,
+        "name": "Baños Waterfalls Route",
+        "category": "waterfall",
+        "province": "Tungurahua",
+        "elevation": "1800 meters",
+        "description": "A famous adventure route featuring waterfalls, rivers, and mountain views.",
+        "image": "images/banos.webp"
+    },
+    {
+        "id": 8,
+        "name": "Chimborazo Wildlife Reserve",
+        "category": "park",
+        "province": "Chimborazo",
+        "elevation": "6263 meters",
+        "description": "A protected area where visitors can see vicuñas near Ecuador's highest mountain.",
+        "image": "images/chimborazo.webp"
+    },
+    {
+        "id": 9,
+        "name": "Machalilla National Park",
+        "category": "park",
+        "province": "Manabi",
+        "elevation": "800 meters",
+        "description": "A coastal national park with beaches, dry forests, and marine ecosystems.",
+        "image": "images/machalilla.webp"
+    },
+    {
+        "id": 10,
+        "name": "Antisana Ecological Reserve",
+        "category": "park",
+        "province": "Napo",
+        "elevation": "5758 meters",
+        "description": "A protected Andean area famous for condors and mountain landscapes.",
+        "image": "images/antisana.webp"
+    },
+    {
+        "id": 11,
+        "name": "El Angel Ecological Reserve",
+        "category": "forest",
+        "province": "Carchi",
+        "elevation": "4000 meters",
+        "description": "Known for unique frailejon plants and beautiful highland scenery.",
+        "image": "images/elangel.webp"
+    },
+    {
+        "id": 12,
+        "name": "Podocarpus National Park",
+        "category": "forest",
+        "province": "Loja",
+        "elevation": "3600 meters",
+        "description": "A protected forest with incredible plant diversity and wildlife.",
+        "image": "images/podocarpus.webp"
+    },
+    {
+        "id": 13,
+        "name": "Llanganates National Park",
+        "category": "park",
+        "province": "Tungurahua",
+        "elevation": "4571 meters",
+        "description": "A remote mountain park with lakes, forests, and diverse ecosystems.",
+        "image": "images/llanganates.webp"
+    },
+    {
+        "id": 14,
+        "name": "Pululahua Geobotanical Reserve",
+        "category": "volcano",
+        "province": "Pichincha",
+        "elevation": "3356 meters",
+        "description": "A volcanic crater reserve with hiking trails and beautiful landscapes.",
+        "image": "images/pululahua.webp"
+    },
+    {
+        "id": 15,
+        "name": "Sumaco National Park",
+        "category": "forest",
+        "province": "Napo",
+        "elevation": "3732 meters",
+        "description": "A protected Amazon and mountain region with unique biodiversity.",
+        "image": "images/sumaco.webp"
+    }
+]
